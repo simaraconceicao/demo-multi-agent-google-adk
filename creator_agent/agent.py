@@ -105,6 +105,14 @@ extract_text_agent = LlmAgent(
     tools=[extract_video_transcript],
     output_key="extracted_text"
 )
+text_to_post_agent = LlmAgent(
+    model="gemini-2.5-flash-preview-04-17",
+    name="text_to_post_agentt",
+    description="Create a short description with 25 characters and a short text with 300 characters to be used as title and description to short videos",
+    instruction="Based on the generated script in 'generated_script' create a concise, engaging short description with 25 characters and a short text with 300 characters to be used as title and description to short videos on platforms like YouTube, Instagram, and TikTok.",
+    output_key="generated_text_to_post"
+)
+
 
 script_agent = LlmAgent(
     model="gemini-2.5-flash-preview-04-17",
@@ -153,7 +161,8 @@ demo_multi_agent = LlmAgent(
         list_videos_agent,
         choose_video_agent,
         extract_text_agent,
-        script_agent
+        script_agent,
+        text_to_post_agent
     ],
 )
 
