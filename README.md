@@ -4,14 +4,6 @@ Este projeto serve como uma demonstração prática para a palestra "Serverless 
 
 O agente desenvolvido aqui, chamado `creator_agent`, é um agente multi-agente que orquestra outros sub-agentes para interagir com a API do YouTube e o modelo Gemini, com o objetivo de gerar roteiros para vídeos curtos baseados no conteúdo de um canal do YouTube.
 
-
-## Demo Implantada
-A demonstração deste projeto está implantada no Google Cloud Run e pode ser acessada na interface de desenvolvimento do ADK através do seguinte link:
-
-https://gc-agente-service-773267354023.us-central1.run.app/dev-ui?app=creator_agent
-
-Explore a interface para interagir com o creator_agent e ver os sub-agentes em ação!
-
 ## Variavéis de Ambiente
 Arquivo de exemplo para as variáveis de ambiente necessárias. Copie para .env e preencha com suas credenciais e IDs.
 
