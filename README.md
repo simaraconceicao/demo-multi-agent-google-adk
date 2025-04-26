@@ -41,15 +41,23 @@ A estrutura de pastas do projeto é a seguinte:
 
 ```
 
-   `creator_agent/`: Contém a lógica específica do agente.
-    -   `agent.py`: Define os sub-agentes e o agente principal (`creator_agent`) usando o ADK. Inclui as funções de ferramenta (Tools) para interagir com o YouTube e o modelo Gemini.
-    -   `.env` e `.env.example`: Arquivos para gerenciar variáveis de ambiente sensíveis (chaves de API, IDs).
--   `venv/`: Ambiente virtual Python.
--   `.gitignore`: Define arquivos e pastas a serem ignorados pelo Git.
--   `Dockerfile`: Instruções para construir a imagem do contêiner Docker da aplicação.
--   `main.py`: Ponto de entrada da aplicação, configura a API FastAPI e integra o agente ADK. Responsável por iniciar o servidor web.
--   `README.md`: Este arquivo.
--   `requirements.txt`: Lista as dependências Python do projeto.
+`creator_agent/`: Contém a lógica específica do agente.
+
+`agent.py`: Define os sub-agentes e o agente principal (`creator_agent`) usando o ADK. Inclui as funções de ferramenta (Tools) para interagir com o YouTube e o modelo Gemini.
+
+`.env` e `.env.example`: Arquivos para gerenciar variáveis de ambiente sensíveis (chaves de API, IDs).
+
+`venv/`: Ambiente virtual Python.
+
+`.gitignore`: Define arquivos e pastas a serem ignorados pelo Git.
+
+`Dockerfile`: Instruções para construir a imagem do contêiner Docker da aplicação.
+
+`main.py`: Ponto de entrada da aplicação, configura a API FastAPI e integra o agente ADK. Responsável por iniciar o servidor web.
+
+`README.md`: Este arquivo.
+
+`requirements.txt`: Lista as dependências Python do projeto.
 
 ## Tecnologias Utilizadas
 
@@ -136,21 +144,24 @@ python3 -m venv venv
 
 * Ative o ambiente virtual: 
 
-* No Linux/macOS:bash
+* No Linux/macOS
+
 ```
 source venv/bin/activate
 ```
 
-* No Windows:bash
+* No Windows:
 
-```
+
+````
 venv\Scripts\activate
-```   
+````
+
 
 Instale as Dependências:
 
 Com o ambiente virtual ativado, instale as bibliotecas Python necessárias:
-Bash
+
 
 ```
 pip install -r requirements.txt
@@ -158,7 +169,7 @@ pip install -r requirements.txt
 Inicie a Aplicação Localmente (com UI do ADK):
 
 Inicie a aplicação usando o comando adk web, que fornece uma interface web para interagir com o agente:
-Bash
+
 
 ```
 adk web
